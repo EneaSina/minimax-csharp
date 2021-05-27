@@ -52,10 +52,11 @@ namespace minimax.tictactoe
             Player giocatore = state.giocatoreCorrente;
             return giocatore;
         } //OK
-
         public Player[] GetPlayers()
         {
-            throw new NotImplementedException();
+            // CREA UN ARRAY CON UN GIOCATORE CROCE E UNO CERCHIO
+            Player[] players = new Player[2] { Player.Cross, Player.Circle };
+            return players;
         }
 
         public State GetResult(State state, Action action)
@@ -83,7 +84,21 @@ namespace minimax.tictactoe
 
         public double GetUtility(State state, Player player)
         {
-            throw new NotImplementedException();
+            int vincitore = ControlloCombinazioni(state);
+            if (IsTerminal(state) == true)
+            {
+                if (vincitore == (int)player)
+                    return double.PositiveInfinity - 1;
+                else if (vincitore == -1)
+                    return 0;
+                else
+                {
+                    return double.NegativeInfinity + 1;
+                }
+
+
+            }
+            return 0;
         }
 
         public bool IsTerminal(State state)
