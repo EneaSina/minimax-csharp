@@ -35,9 +35,10 @@ namespace minimax.tictactoe
                 List<Action> actions = new List<Action>();
                 State state = game.GetInitialState();
                 Console.WriteLine("Che livello di difficolta' vuoi affrontare?");
-                int lv = Convert.ToInt32(Console.ReadLine());
+                //int lv = Convert.ToInt32(Console.ReadLine());
                 AdversarialSearch<State, Action> adversarial;
-                adversarial = new MinimaxSearchLimited<State, Action, Player>(game, lv);
+                adversarial = new MinimaxSearch<State, Action, Player>(game);
+               // adversarial = new MinimaxSearchLimited<State, Action, Player>(game, lv);
                 while (!game.IsTerminal(state))
                 {
                     Console.WriteLine("Inserisci le coordinate delle righe");
@@ -62,30 +63,31 @@ namespace minimax.tictactoe
         public static void Tabella(State stato)
         {
             char[] tris = new char[3] { ' ', 'X', 'O' }; //SPAZIO QUANDO NON C'E' NE X NE O
-            int[] fill = new int[9];//VIENE RIEMPITO COL GLI SPAZI, X, O, PER METTERLI NELLA TABELLA,USATO COME INDICE
-            int k = 0;
+            string[,] fill = new string[3,3];//VIENE RIEMPITO COL GLI SPAZI, X, O, PER METTERLI NELLA TABELLA,USATO COME INDICE
             for (int i = 0; i < 3; i++)
             {
 
                 for (int j = 0; j < 3; j++)
                 {
                     if (stato.campo[i, j] == -1)
-                        fill[k] = 0;//RIEMPITO CON 0 CHE SARA' " "
+                        fill[i,j] = " ";//RIEMPITO CON 0 CHE SARA' " "
                     else if (stato.campo[i, j] == 0)
-                        fill[k] = 1;//RIEMPITO CON 1 CHE SARA' X
+                        fill[i,j] = "X";//RIEMPITO CON 1 CHE SARA' X
                     else
-                        fill[k] = 2;//RIEMPITO CON 0 CHE SARA' O
-                    k++;
+                        fill[i,j] = "O";//RIEMPITO CON 0 CHE SARA' O
+
                 }
             }
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("+---+---+---+");
-            Console.WriteLine($"|{tris[fill[0]]}  | {tris[fill[1]]}  | {tris[fill[2]]}|");
+            Console.WriteLine($"| {fill[0, 0]} | {fill[0, 1]} | {fill[0, 2]} |");
             Console.WriteLine("+---+---+---+");
-            Console.WriteLine($"|{tris[fill[3]]}  | {tris[fill[4]]}  | {tris[fill[5]]}|");
+            Console.WriteLine($"| {fill[1, 0]} | {fill[1, 1]} | {fill[1, 2]} |");
             Console.WriteLine("+---+---+---+");
-            Console.WriteLine($"|{tris[fill[6]]}  | {tris[fill[7]]}  | {tris[fill[8]]}|");
+            Console.WriteLine($"| {fill[2, 0]} | {fill[2, 1]} | {fill[2, 2]} |");
             Console.WriteLine("+---+---+---+");
+
+
             Console.ForegroundColor = ConsoleColor.White;
 
         }

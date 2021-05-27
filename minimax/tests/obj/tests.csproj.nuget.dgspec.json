@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj": {}
+    "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj": {
+    "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj",
+        "projectUniqueName": "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj",
         "projectName": "Minimax",
-        "projectPath": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj",
-        "packagesPath": "C:\\Users\\Enea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\Minimax\\obj\\",
+        "projectPath": "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj",
+        "packagesPath": "C:\\Users\\alema\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\Minimax\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Enea\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\alema\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -52,22 +58,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj": {
+    "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj",
+        "projectUniqueName": "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj",
         "projectName": "tests",
-        "projectPath": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj",
-        "packagesPath": "C:\\Users\\Enea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\tests\\obj\\",
+        "projectPath": "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj",
+        "packagesPath": "C:\\Users\\alema\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Enea\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\alema\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -78,9 +88,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj": {
-                "projectPath": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj"
+              "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj": {
+                "projectPath": "C:\\Users\\alema\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj"
               }
             }
           }
@@ -93,6 +104,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -126,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

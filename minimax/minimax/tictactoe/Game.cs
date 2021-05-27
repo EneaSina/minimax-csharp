@@ -70,7 +70,7 @@ namespace minimax.tictactoe
             StatoCopia.campo = (int[,])state.campo.Clone();
             StatoCopia.giocatoreCorrente = state.giocatoreCorrente;
 
-            StatoCopia.campo[action.Row, action.Col] = (int)state.giocatoreCorrente;
+            StatoCopia.campo[action.Row, action.Col] = (int)StatoCopia.giocatoreCorrente;
             if (StatoCopia.giocatoreCorrente == Player.Circle)
             {
                 StatoCopia.giocatoreCorrente = Player.Cross;
@@ -96,12 +96,13 @@ namespace minimax.tictactoe
                     return double.NegativeInfinity + 1;
                 }
             }
+
             return 0;
         }
 
         public bool IsTerminal(State state)
         {
-            if (ControlloCombinazioni(state) != -1)
+            if ((ControlloCombinazioni(state) ==(int)Player.Cross)||(ControlloCombinazioni(state) == (int)Player.Circle))
             {
                 return true;
             }
@@ -134,7 +135,7 @@ namespace minimax.tictactoe
                 }
                 if (state.campo[0, i] != -1)
                 {
-                    if ((state.campo[0, i] == state.campo[1, i]) && (state.campo[0, 1] == state.campo[2, i]))
+                    if ((state.campo[0, i] == state.campo[1, i]) && (state.campo[0, i] == state.campo[2, i]))
                     {
                         return state.campo[0, i];
                     }
