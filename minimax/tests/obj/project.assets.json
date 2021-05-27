@@ -3521,19 +3521,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mauva\\.nuget\\packages\\": {}
+    "C:\\Users\\Enea\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauva\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj",
+      "projectUniqueName": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj",
       "projectName": "tests",
-      "projectPath": "C:\\Users\\mauva\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj",
-      "packagesPath": "C:\\Users\\mauva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauva\\OneDrive\\Desktop\\minimax\\tests\\obj\\",
+      "projectPath": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\tests\\tests.csproj",
+      "packagesPath": "C:\\Users\\Enea\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mauva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Enea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3546,8 +3546,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\mauva\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj": {
-              "projectPath": "C:\\Users\\mauva\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj"
+            "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj": {
+              "projectPath": "C:\\Users\\Enea\\OneDrive\\Desktop\\minimax\\Minimax\\Minimax.csproj"
             }
           }
         }
@@ -3593,7 +3593,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

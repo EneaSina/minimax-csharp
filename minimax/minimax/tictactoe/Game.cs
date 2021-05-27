@@ -95,8 +95,6 @@ namespace minimax.tictactoe
                 {
                     return double.NegativeInfinity + 1;
                 }
-
-
             }
             return 0;
         }

@@ -1,0 +1,11 @@
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\bin\Debug\netcoreapp3.1\Minimax.exe
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\bin\Debug\netcoreapp3.1\Minimax.deps.json
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\bin\Debug\netcoreapp3.1\Minimax.runtimeconfig.json
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\bin\Debug\netcoreapp3.1\Minimax.runtimeconfig.dev.json
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\bin\Debug\netcoreapp3.1\Minimax.dll
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\bin\Debug\netcoreapp3.1\Minimax.pdb
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\obj\Debug\netcoreapp3.1\Minimax.csprojAssemblyReference.cache
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\obj\Debug\netcoreapp3.1\Minimax.AssemblyInfoInputs.cache
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\obj\Debug\netcoreapp3.1\Minimax.AssemblyInfo.cs
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\obj\Debug\netcoreapp3.1\Minimax.dll
+C:\Users\Enea\OneDrive\Desktop\minimax\Minimax\obj\Debug\netcoreapp3.1\Minimax.pdb

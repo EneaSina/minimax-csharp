@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using minimax.core.adversarial;
+
 
 namespace minimax.tictactoe
 {
@@ -17,7 +19,44 @@ namespace minimax.tictactoe
             //Stampare il nuovo stato
             while (true)
             {
+              
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("     TRIS    ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("+---+---+---+");
+                Console.WriteLine("|   |   |   |");
+                Console.WriteLine("+---+---+---+");
+                Console.WriteLine("|   |   |   |");
+                Console.WriteLine("+---+---+---+");
+                Console.WriteLine("|   |   |   |");
+                Console.WriteLine("+---+---+---+");
+                Console.WriteLine("");
+                Game game = new Game();
+                List<Action> actions = new List<Action>();
+                State state = game.GetInitialState();
+                Console.WriteLine("Che livello di difficolta' vuoi affrontare?");
+                int lv = Convert.ToInt32(Console.ReadLine());
+                AdversarialSearch<State, Action> adversarial;
+                adversarial = new MinimaxSearchLimited<State, Action, Player>(game, lv);
+                while (!game.IsTerminal(state))
+                {
+                    Console.WriteLine("Inserisci le coordinate delle righe");
+                    int row = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Inserisci le coordinate delle colonne");
+                    int col = Convert.ToInt32(Console.ReadLine());
+                    Action action = new Action(row, col);
+                    actions = game.GetActions(state);
 
+                    state = game.GetResult(state, action);
+                    Tabella(state);
+
+                    if (!game.IsTerminal(state))
+                    {
+                        Action mossaBot = adversarial.makeDecision(state);
+                        state = game.GetResult(state, mossaBot);
+                        Tabella(state);
+                    }
+                }
             }
         }
         public static void Tabella(State stato)
