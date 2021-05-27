@@ -7,7 +7,6 @@ namespace minimax.tictactoe
 {
     class Game : IGame<State, Action, Player>
     {
-        public int vincitore;
         public List<Action> GetActions(State state)
         {
             List<Action> action = new List<Action>();
@@ -92,9 +91,7 @@ namespace minimax.tictactoe
                 else if (vincitore == -1)
                     return 0;
                 else
-                {
                     return double.NegativeInfinity + 1;
-                }
             }
 
             return 0;

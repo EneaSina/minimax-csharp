@@ -34,17 +34,14 @@ namespace minimax.tictactoe
                 Game game = new Game();
                 List<Action> actions = new List<Action>();
                 State state = game.GetInitialState();
-                Console.WriteLine("Che livello di difficolta' vuoi affrontare?");
-                //int lv = Convert.ToInt32(Console.ReadLine());
                 AdversarialSearch<State, Action> adversarial;
                 adversarial = new MinimaxSearch<State, Action, Player>(game);
-               // adversarial = new MinimaxSearchLimited<State, Action, Player>(game, lv);
                 while (!game.IsTerminal(state))
                 {
                     Console.WriteLine("Inserisci le coordinate delle righe");
-                    int row = Convert.ToInt32(Console.ReadLine());
+                        int row = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Inserisci le coordinate delle colonne");
-                    int col = Convert.ToInt32(Console.ReadLine());
+                         int col = Convert.ToInt32(Console.ReadLine());
                     Action action = new Action(row, col);
                     actions = game.GetActions(state);
 
@@ -57,13 +54,27 @@ namespace minimax.tictactoe
                         state = game.GetResult(state, mossaBot);
                         Tabella(state);
                     }
+                    if (game.IsTerminal(state))
+                    {
+                        if (game.GetUtility(state,state.giocatoreCorrente)==double.PositiveInfinity)
+                        {
+                            Console.WriteLine("HAI VINTO... BRAVO");
+                        }
+                        else if (game.GetUtility(state, state.giocatoreCorrente) == double.NegativeInfinity)
+                        {
+                            Console.WriteLine("HAI PERSO... LA PROSSIMA VOLTA PROVA A PAREGGIARE");
+                        }
+                        else 
+                        {
+                            Console.WriteLine("HAI PAREGGIATO..");
+                        }
+                    }
                 }
             }
         }
         public static void Tabella(State stato)
         {
-            char[] tris = new char[3] { ' ', 'X', 'O' }; //SPAZIO QUANDO NON C'E' NE X NE O
-            string[,] fill = new string[3,3];//VIENE RIEMPITO COL GLI SPAZI, X, O, PER METTERLI NELLA TABELLA,USATO COME INDICE
+            string[,] fill = new string[3,3];//VIENE RIEMPITO COL GLI SPAZI, X, O, PER METTERLI NELLA TABELLA
             for (int i = 0; i < 3; i++)
             {
 
